@@ -209,21 +209,21 @@ header {
 	}
 	.header-contacts {
 		display: flex;
-		/* flex-wrap: wrap; */
 		flex-direction: column;	
-		/* width: 119px; */
 		margin-left: auto;
-		
-
+		outline: 2px solid orchid;		
 	}
-	/* .site-nav-item {
-		
-	} */
+	.site-nav-item.contacts {
+		display: block;
+		text-align: center;
+	}
+
 	.contact-text {
 		/* margin-left: 10px; */
 		font-size: 12px;
 		line-height: calc(16/12);
-		letter-spacing: 0.04em
+		letter-spacing: 0.04em;
+		
 		}
 
 }
