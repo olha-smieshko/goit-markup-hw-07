@@ -165,14 +165,12 @@ header {
 		display: none;
 	}
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 	.site-nav {
 		display: flex;
 		margin-left: 77px;
 	}
-	.site-nav-item+.site-nav-item {
-		margin-left: 40px;
-	}
+	
 	.site-nav-link {
 		position: relative;
 		display: block;
@@ -219,44 +217,40 @@ header {
 	}
 
 	.contact-text {
-		/* margin-left: 10px; */
 		font-size: 12px;
 		line-height: calc(16/12);
 		letter-spacing: 0.04em;
-		
-		}
+	}
+	.site-nav-link:hover,
+	.site-nav-link:focus,
+	.site-nav-link.current:hover,
+	.site-nav-link.current:focus {
+		color: var(--text);
+	}
+	.site-nav-item:hover .header-contacts-link,
+	.site-nav-item:focus .header-contacts-link,
+	.site-nav-link:active,
+	.site-nav-link.current:active {
+		color: var(--primary-brand);
+	}
 
 }
-
-
-
-/* */
-/* .site-nav-item .contact-icon {
-	width: 24px;
-	height:  24px;
-	fill: var(--text);
-	transition: fill 250ms var(--timing-function);
-} */
-/* .contact-text {
-	margin-left: 10px;
-} */
-/* .site-nav-link:hover,
-.site-nav-link:focus,
-.site-nav-link.current:hover,
-.site-nav-link.current:focus {
-	color: var(--text);
-} */
-/* .site-nav-item:hover .header-contacts-link,
-.site-nav-item:focus .header-contacts-link,
-.site-nav-item:hover .contact-icon,
-.site-nav-item:focus .contact-icon,
-.site-nav-link:active,
-.site-nav-link.current:active {
-	color: var(--primary-brand);
-	fill: var(--primary-brand);
-} */
-/*  */
-
+@media screen and (min-width: 1200px) {
+	.site-nav-item+.site-nav-item {
+			margin-left: 40px;
+	}
+	.header-contacts {
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		outline: 2px solid orchid;
+	}
+	.contact-text {
+		font-size: 16px;
+		line-height: calc(24/16);
+		letter-spacing: 0.02em;
+	}
+}
 /* Hero */
 .section.hero {
 	max-width: 428px;
@@ -267,15 +261,50 @@ header {
 	padding-top: 112px;
 	padding-bottom: 112px;
 
+	background-color: var(--dark);
+	border: 1px solid #000000;
+
 	text-align: center;
-	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	background-color: var(--dark);
-	border: 1px solid #000000;
+	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_428.jpg);
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+	.section.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_428_@2x.jpg);
+	}
+}
+@media screen and (min-width: 768px) {
+	.section.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_768.jpg);
+	}
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+	.section.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_768_@2x.jpg);
+	}
+}
+@media screen and (min-width: 1200px) {
+	.section.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_1440_.jpg);
+	}
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+	.section.hero {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_1440_@2x.jpg);
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.section.hero {
 		max-width: 768px;
@@ -396,14 +425,12 @@ header {
 	background-color: var(--primary-white-color);
 	border: 1px solid var(--accent);
 }
-.strategy-item-img {
-	width: 360px;
-	height: 300px;
-}
 .strategy-item-img,
 .team-item-img,
 .portfolio-item-img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 @media screen and (max-width: 1199.98px) {
 	.strategy.section {
@@ -615,6 +642,7 @@ header {
 		min-width: 264px;
 		margin-right: 120px;
 		margin-left: 0;
+		margin-bottom: 0;
 	}
 }
 .footer-logo {
@@ -658,6 +686,7 @@ header {
 @media screen and (min-width: 1200px) {
 	.footer-soc {
 		margin-right: 80px;
+		margin-bottom: 0;
 	}
 }
  .footer-soc-text {
@@ -913,8 +942,8 @@ header {
 @media screen and (max-width: 767.98px) {
 	
 	.modal {
-		height: 586px;
-		width: 392px;
+		max-height: 98%;
+		max-width: 392px;
 	}
 }
 
