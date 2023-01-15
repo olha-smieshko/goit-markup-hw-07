@@ -63,8 +63,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 
-	outline: 2px solid tomato;
-	outline-offset: -2px;
+
 }
 @media screen and (min-width: 768px) {
 	.conteiner {
@@ -209,7 +208,7 @@ header {
 		display: flex;
 		flex-direction: column;	
 		margin-left: auto;
-		outline: 2px solid orchid;		
+				
 	}
 	.site-nav-item.contacts {
 		display: block;
@@ -243,7 +242,7 @@ header {
 		display: flex;
 		flex-direction: row;
 		margin-left: auto;
-		outline: 2px solid orchid;
+		
 	}
 	.contact-text {
 		font-size: 16px;
@@ -369,10 +368,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 } */
 
 /* Benefits */
-.benefits-item {
-	outline: 2px solid teal;
-}
-@media screen and (max-width: 1199.98px) {
+ia screen and (max-width: 1199.98px) {
 	.benefits-item {
 		max-width: 396px;
 		margin-bottom: 72px;
@@ -452,7 +448,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 	margin-bottom: 72px;
-	outline: 2px solid purple;
+	
 }
 .team-item:nth-last-child(-n+1) {
 	margin-bottom: 0;
